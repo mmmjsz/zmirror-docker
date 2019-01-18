@@ -63,5 +63,5 @@ EXPOSE 443
 
 ENTRYPOINT ["/ENTRY.sh"]
 
-#CMD ["start"]
-CMD ["apache2ctl", "-D", "FOREGROUND"]
+CMD ["start"]
+#CMD ["apache2ctl", "-D", "FOREGROUND"]
