@@ -11,8 +11,8 @@ ENV MIRROR_NAME google
 
 #python3 and flask requests cchardet fastcache dependencies installation
 #cron可选安装。
-RUN apt-get update && \cp /usr/share/zoneinfo/Asia/Shanghai /etc/localtime && \
-    apt-get install -y build-essential patch binutils make devscripts nano libtool libssl-dev libxml2 \
+#apt-get update && \cp /usr/share/zoneinfo/Asia/Shanghai /etc/localtime && \
+RUN apt-get install -y build-essential patch binutils make devscripts nano libtool libssl-dev libxml2 \
                        libxml2-dev software-properties-common python-software-properties dnsutils \
                        git wget curl python3 python3-dev iftop cron && \
     wget --no-check-certificate https://bootstrap.pypa.io/get-pip.py -O - | python3
